@@ -1,10 +1,10 @@
 services:
   web:
     build:
-      context: angular
+      context: app
       target: builder
     ports:
       - 4200:4200
     volumes:
-      - ./angular:/project
+      - ./app:/project
       - /project/node_modules
